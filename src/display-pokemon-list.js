@@ -1,4 +1,5 @@
 /* eslint-disable linebreak-style */
+/* eslint-disable import/no-cycle */
 /* eslint-disable no-unused-vars */
 /* eslint-disable array-callback-return */
 /* eslint-disable consistent-return */
@@ -90,11 +91,11 @@ function createPokemon(pokedex) {
               <div class="pokemon-number d-flex align-items-center ps-2 pe-3">#${pokemon.index}</div>
               <div class="likes-box d-flex align-items-center ps-3"><span class="pe-2" id="${pokemon.index}_pokemonLikes">0</span>Likes</div>
             </div>
-  
+
             <button type="button" class="Comments-button mt-3" data-bs-toggle="modal" data-bs-target="#commentsModal">
               Comments
             </button>
-  
+
             <div
                     class="modal fade"
                     id="commentsModal"
