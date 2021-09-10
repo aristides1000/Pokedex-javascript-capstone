@@ -190,7 +190,27 @@ function createPokemon(pokedex) {
       const sprite = document.createElement('img');
       sprite.className = 'pokemon-image';
       sprite.alt = 'pokemon-image';
-      sprite.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.index}.png`;
+
+      const imageExists = (imageUrl) => {
+        let ans = 'https://i.pinimg.com/originals/0d/b1/0c/0db10c1dd328a29177abbd8d992a370f.gif';
+        const http = new XMLHttpRequest();
+        http.open('HEAD', imageUrl, false);
+        http.send();
+        if (http.status !== 404) {
+          ans = imageUrl;
+        }
+        return ans;
+      };
+
+      let imagePokemon;
+
+      if (pokemon.index <= 898) {
+        imagePokemon = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.index}.png`;
+      } else {
+        imagePokemon = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.index + 9102}.png`;
+      }
+
+      sprite.src = imageExists(imagePokemon);
 
       spriteContainer.appendChild(sprite);
     });
