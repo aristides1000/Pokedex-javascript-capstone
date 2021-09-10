@@ -14,7 +14,7 @@
 - ESLint
 ## Live Demo
 
-[Live Demo Link](https://raw.githack.com/aristides1000/leaderboard/final-touches/dist/index.html)
+[Live Demo Link](https://raw.githack.com/aristides1000/Pokedex-javascript-capstone/completion-activities-alone/dist/index.html)
 
 
 ## Getting Started
@@ -69,7 +69,7 @@ To make this repository working in your local machine you need only a browser.
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/aristides1000/leaderboard/issues).
+Feel free to check the [issues page](https://github.com/aristides1000/Pokedex-javascript-capstone/issues).
 
 
 ## Show your support
@@ -79,6 +79,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Ariel Camus CEO Microverse: For letting us start this journey.
+- Pokemon: For making an excellent series and video games that made my childhood happy.
 - Google: For letting us find crucial information in order to create this project.
 
 ## 📝 License
