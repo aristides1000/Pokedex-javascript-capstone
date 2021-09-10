@@ -1,5 +1,5 @@
-/* eslint-disable no-unused-vars */
 /* eslint-disable linebreak-style */
+/* eslint-disable no-unused-vars */
 /* eslint-disable array-callback-return */
 /* eslint-disable consistent-return */
 /* eslint-disable no-use-before-define */
