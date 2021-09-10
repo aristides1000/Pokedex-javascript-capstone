@@ -2,7 +2,9 @@
 # Pokedex Javascript Capstone Project
 
 > This is a JavaScript project in which a user can see a list of all existing Pokémon and can add likes to their favorite Pokémon, this application was made with the API service called PokeAPI.
-![screenshot](./app_screenshot.png)
+![screenshot](./screenshot_1.png)
+![screenshot](./screenshot_2.png)
+![screenshot](./screenshot_3.png)
 
 ## Built With
 
@@ -31,15 +33,14 @@
 2. Put the following code inside the console:
 
 ```
-fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/', {
+fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/', {
   method: 'POST',
-  body: JSON.stringify({ name: 'Enter new game name here' }),
   headers: {
-    'Content-type': 'application/json; charset=UTF-8',
+    'Content-type': 'text/html',
   },
 })
-  .then((res) => res.json())
-  .then((json) => json.result)
+  .then((res) => res.text())
+  .then((text) => text);
 ```
 
 3. Hit Enter.
@@ -48,7 +49,7 @@ fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/', {
 ```
 [[Prototype]]: Promise
 [[PromiseState]]: "fulfilled"
-[[PromiseResult]]: "Game with ID: rGmd6bUgzgGOGEjf2yGw added."
+[[PromiseResult]]: "jycTbGhuwe4GB4mBDbSf"
 ```
 
 5. And this way you can get your API key 🥳🥳🥳.

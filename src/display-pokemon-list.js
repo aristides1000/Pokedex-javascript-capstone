@@ -5,6 +5,7 @@
 /* eslint-disable no-use-before-define */
 
 import addNewLike from './add-new-like.js';
+import recievedLikes from './display-likes.js';
 
 const pokemonContainer = document.getElementById('pokemonContainer');
 const spinner = document.getElementById('spinner');
@@ -192,6 +193,8 @@ function createPokemon(pokedex) {
 
       spriteContainer.appendChild(sprite);
     });
+
+    recievedLikes();
   };
 
   const previous = document.getElementById('previous');
@@ -203,6 +206,8 @@ function createPokemon(pokedex) {
     if (page > 1) {
       page -= 1;
       displayPage(page);
+      recievedLikes();
+      addLikesListener();
     }
   });
 
@@ -210,6 +215,8 @@ function createPokemon(pokedex) {
     if (page < indexerPokedex.length / 30) {
       page += 1;
       displayPage(page);
+      recievedLikes();
+      addLikesListener();
     }
   });
 }
@@ -226,15 +233,11 @@ function displayLikes(likes) {
   });
 }
 
-function addLikesListener(data) {
+function addLikesListener(page) {
   const likeButtons = document.querySelectorAll('.like-btn');
   likeButtons.forEach((likeButton) => {
     likeButton.addEventListener('click', () => {
-      addNewLike(parseInt(likeButton.dataset.pokemonId, 10)).then(
-        () => {
-          window.location.reload();
-        },
-      );
+      addNewLike(parseInt(likeButton.dataset.pokemonId, 10));
     });
   });
 }

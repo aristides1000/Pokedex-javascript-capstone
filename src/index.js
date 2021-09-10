@@ -38,5 +38,3 @@ img.classList.add('pokeball-logo');
 pokeballLogo.appendChild(img);
 
 fetchPokemons((offset = 1), (limit = 8));
-
-recievedLikes();

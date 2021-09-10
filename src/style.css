@@ -27,6 +27,7 @@
 body {
   font-family: 'pokemon-classic', sans-serif;
   background-color: var(--main-bg-color);
+  min-height: 100vh;
 }
 
 .nav-link {
@@ -332,9 +333,7 @@ body {
 }
 
 .spinner-center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  min-height: 640px;
   transform: translate(-50%, -50%);
 }
 
