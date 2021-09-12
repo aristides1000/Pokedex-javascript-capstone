@@ -24,10 +24,25 @@
   --main-bg-color: #fe0065;
 }
 
+@keyframes backgroundPositionBody {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 40% 10%;
+  }
+}
+
 body {
   font-family: 'pokemon-classic', sans-serif;
-  background-color: var(--main-bg-color);
   min-height: 100vh;
+  background-size: 25%;
+  animation-duration: 20s;
+  animation-name: backgroundPositionBody;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  transition-timing-function: linear;
 }
 
 .nav-link {
@@ -283,15 +298,9 @@ body {
   background-color: var(--main-bg-color);
 }
 
-.total-comments,
-.add-comment-heading {
-  text-align: center;
-  color: #bebebe;
-  margin: 30px 0;
-}
-
 .add-comment-heading {
   margin-top: 50px;
+  text-align: center;
 }
 
 .all-comments {
@@ -352,4 +361,29 @@ body {
 
 .at {
   font-family: "Arial Black", Gadget, sans-serif;
+}
+
+.comment-container {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-dialog {
+  border-radius: 15px;
+}
+
+.fs-close {
+  font-size: 85px !important;
+}
+
+.pokemon-img-not-found {
+  width: 40%;
 }

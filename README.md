@@ -2,9 +2,10 @@
 # Pokedex Javascript Capstone Project
 
 > This is a JavaScript project in which a user can see a list of all existing Pokémon and can add likes to their favorite Pokémon, this application was made with the API service called PokeAPI.
-![screenshot](./screenshot_1.png)
-![screenshot](./screenshot_2.png)
-![screenshot](./screenshot_3.png)
+![screenshot](./1_screenshot.png)
+![screenshot](./2_screenshot.png)
+![screenshot](./3_screenshot.png)
+![screenshot](./4_screenshot.png)
 
 ## Built With
 
@@ -14,7 +15,10 @@
 - ESLint
 ## Live Demo
 
-[Live Demo Link](https://raw.githack.com/aristides1000/Pokedex-javascript-capstone/completion-activities-alone/dist/index.html)
+[Live Demo Link](https://rawcdn.githack.com/zainsadaqat/javascript-capstone-pokeapi/9c23e92fb394f561100659025d7f10774130146d/dist/index.html)
+
+## Video
+[Explaining Video Link](https://www.youtube.com/watch?v=eNB1iGhPN7Y&ab_channel=aristidesjosemolinaperez)
 
 
 ## Getting Started
@@ -69,7 +73,7 @@ To make this repository working in your local machine you need only a browser.
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/aristides1000/Pokedex-javascript-capstone/issues).
+Feel free to check the [issues page](https://github.com/zainsadaqat/javascript-capstone-pokeapi/issues).
 
 
 ## Show your support

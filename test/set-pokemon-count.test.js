@@ -1,4 +1,3 @@
-/* eslint-disable linebreak-style */
 /**
  * @jest-environment jsdom
  */

@@ -1,4 +1,3 @@
-/* eslint-disable linebreak-style */
 const pokedex = {
   count: 1118,
   next: null,
